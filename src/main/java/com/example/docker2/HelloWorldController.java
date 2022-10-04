@@ -18,7 +18,7 @@ public class HelloWorldController {
 
     @GetMapping("/")
     public ResponseEntity<HelloWorld> helloWorld(){
-        HelloWorld helloworld = new HelloWorld("Hej med Zando");
+        HelloWorld helloworld = new HelloWorld("Hej med dig");
         repo.save(helloworld);
         return new ResponseEntity<>(helloworld, HttpStatus.OK);
     }
